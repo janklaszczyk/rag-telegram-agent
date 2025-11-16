@@ -1,0 +1,32 @@
+[project]
+name = "project"
+version = "1.0.0"
+description = "This project is a customizable Retrieval-Augmented Generation (RAG) agent built using LangGraph, ChromaDB, and OpenAI models, with Telegram Bot serving as the chat frontend. The agent indexes PDF documents, stores embeddings in a vector database, and retrieves relevant chunks to answer user queries conversationally."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.2.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.117.1",
+    "jinja2>=3.1.6",
+    "langchain>=0.3.27",
+    "langchain-chroma>=0.2.6",
+    "langchain-community>=0.3.29",
+    "langchain-core>=0.3.76",
+    "langchain-openai>=0.3.33",
+    "langgraph>=0.6.7",
+    "langgraph-cli[inmem]>=0.4.2",
+    "langgraph-sdk>=0.2.6",
+    "langsmith>=0.4.27",
+    "pandas>=2.3.2",
+    "pandas-stubs>=2.3.2.250926",
+    "pypdf>=6.1.2",
+    "python-telegram-bot>=22.5",
+    "streamlit>=1.49.1",
+    "tavily-python>=0.7.12",
+    "telegram>=0.0.1",
+    "trustcall>=0.0.39",
+    "types-requests>=2.32.4.20250913",
+    "typing>=3.10.0.0",
+    "typing-extensions>=4.15.0",
+]
