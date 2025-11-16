@@ -1,6 +1,6 @@
 # Customizable RAG Agent with Telegram Bot Frontend
 
-![Agent Graph Illustration Placeholder](./content/RAG_scheme.png)
+![Agent Graph Illustration Placeholder](./examples/RAG_scheme.png)
 
 ## 📌 Project Overview
 
@@ -39,7 +39,7 @@ project_root/
 ├── prompts/                     # Folder with system prompts in j2 format
 │   ├── ...
 │
-├── assets/                      # For README file pictures
+├── examples/                      # For README file pictures
 │   ├── ...
 ```
 
@@ -63,7 +63,7 @@ uv sync
 
 Create a `.env` file in the **project_root/** directory based on .env.example and fill API keys. 
 In order to get Telegram token, find and interact with BotFather via telegram (see below).
-![Telegram Bot configuration](./content/Bot_configuration.png)
+![Telegram Bot configuration](./examples/Bot_configuration.png)
 
 ### 3. **Creating knowledge database**
 
@@ -82,7 +82,7 @@ python -m app.telegram_bot
 
 3. Open Telegram and send a message to your bot configured before→ **Start chatting!**
 
-![Telegram Setup Placeholder](./content/RAG_agent_telegram_chatting.png)
+![Telegram Setup Placeholder](./examples/RAG_agent_telegram_chatting.png)
 
 ---
 
@@ -92,11 +92,5 @@ python -m app.telegram_bot
 * Use `Jinja2` templates to modify system behavior without editing Python code
 * Telegram messages are limited to **4096 characters**, therefore, agent will summarize the answer to thi length
 * Extend the agent by adding more tools or external data sources
-
----
-
-## 🤝 Contribution & License
-
-Feel free to extend, fork, and improve this project. Add credits or license terms here if needed.
 
 ---
